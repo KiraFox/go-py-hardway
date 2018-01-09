@@ -1,0 +1,10 @@
+signature:
+RFC 4648 compliant Base64 encoded cryptographic signature of the input, calculated using the private key and the SHA256 digest of the input
+
+pubkey:
+Base64 encoded string (PEM format) of the public key generated from the private key used to create the digital signature
+
+
+
+
+input (string) > encode input (SHA256 Sum the input then Base64 encode the SHA256 Sum output) > save input in JSON (message string) > save encoded output in JSON (signature string) >  
